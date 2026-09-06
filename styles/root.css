@@ -1,0 +1,18 @@
+* {
+    font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+    /* Cores principais */
+    --primary-color: #013C96;
+    --secondary-color: #FE7F02;
+    --tertiary-color: #FDA000;
+
+    /* Cores de Texto */
+    --primary-text: #FFFFFF;
+    --secondary-text: #90bdfd;
+    --tertiary-text: #013C96;
+
+    /* Background */
+    --background-color: #F8FAFC;
+}
