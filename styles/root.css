@@ -16,3 +16,10 @@
     /* Background */
     --background-color: #F8FAFC;
 }
+
+.titulo-novo-topico {
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,7 +1,6 @@
 main {
     margin-top: -30px;
     color: var(--primary-text);
-
     #carouselRedeMenteAtiva {
         .carousel-img {
             width: 100%;
@@ -62,6 +61,12 @@ main {
             .carousel-img {
                 height: 220px;
             }
+        }
+    }
+    #sobre {
+        color: var(--primary-color);
+        h3 {
+            color: var(--secondary-color);
         }
     }
 }
