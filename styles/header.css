@@ -1,5 +1,9 @@
 header {
+    color: var(--primary-text);
     background-color: var(--primary-color);
+    a {
+        text-decoration: none;
+    }
     .nav-link {
         color: var(--primary-text);
         transition: 0.5s;

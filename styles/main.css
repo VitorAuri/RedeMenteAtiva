@@ -1,6 +1,7 @@
 main {
     margin-top: -30px;
-    color: var(--primary-text);
+    color: var(--primary-color);
+
     #carouselRedeMenteAtiva {
         .carousel-img {
             width: 100%;
@@ -11,39 +12,33 @@ main {
 
         .carousel-inner {
             text-align: justify;
-            .written-content-left {
+
+            .written-content,
+            .written-content-with-description {
                 text-align: left;
+                background: var(--primary-color);
+                border-radius: 10px;
+                padding: 15px;
+                position: absolute;
+                left: 5%;
+                transform: translateY(60%);
+
                 h1 {
                     color: var(--secondary-color);
                 }
 
                 p {
                     color: var(--primary-text);
+                    font-size: 1.4rem;
                 }
-
-                background: var(--primary-color);
-                border-radius: 5px;
-                position: absolute;
-                top: 50%;
-                left: 1%;
-                transform: translateY(60%);
             }
 
-            .written-content-right {
-                text-align: right;
-                h1 {
-                    color: var(--secondary-color);
-                }
+            .written-content {
+                top: 60%;
+            }
 
-                p {
-                    color: var(--primary-text)
-                }
-                background: var(--primary-color);
-                border-radius: 5px;
-                position: absolute;
-                top: 50%;
-                right: 1%;
-                transform: translateY(60%);
+            .written-content-with-description {
+                top: 53%;
             }
         }
 
@@ -63,10 +58,46 @@ main {
             }
         }
     }
-    #sobre {
-        color: var(--primary-color);
-        h3 {
-            color: var(--secondary-color);
-        }
+
+    
+    h3 {
+        color: var(--secondary-color);
+    }
+
+    .imagem-sobre {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .imagem-sobre-menor {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .logo-parceiro {
+        width: 80px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .logo-parceiro img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .parceiro {
+        min-height: 60px;
+    }
+
+    .instagram-link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        flex-shrink: 0;
     }
 }

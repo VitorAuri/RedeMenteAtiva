@@ -25,29 +25,109 @@
 <body>
 
     <header
-        class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 py-3 mb-4 border-bottom">
-        <a class="logo" href="/" class="d-flex align-items-center text-decoration-none">
-            <img src="assets/logoredementeativa.png" width="80" class="img-fluid" alt="Logo Rede Mente Ativa">
-        </a>
+        class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 py-3 mb-5 border-bottom">
+        <!-- Logo + título -->
+        <div class="d-flex align-items-center gap-3">
+            <a href="/" class="d-flex align-items-center text-decoration-none">
+                <img src="assets/logoredementeativa.png" width="80" class="img-fluid" alt="Logo Rede Mente Ativa">
+            </a>
+
+            <h5 class="primary mb-0">
+                Projeto Rede Mente Ativa
+            </h5>
+        </div>
+        <!-- Menu -->
         <ul class="nav nav-pills justify-content-center">
             <li class="nav-item">
-                <a href="#" class="nav-link">Início</a>
+                <a href="#inicio" class="nav-link">Início</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Sobre</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Modalidades</a>
+                <a href="#modalidades" class="nav-link">Modalidades</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Contato</a>
+                <a href="#contato" class="nav-link">Contato</a>
             </li>
         </ul>
     </header>
 
     <main>
+        <!--SOBRE-->
+        <article id="inicio" class="container">
+            <h2 class="pb-2 text-center">Início</h2>
+            <section>
+                <div class="col-12 mb-4">
+                    <div class="row g-0 border rounded overflow-hidden shadow-sm">
+                        <div class="col-md-7 p-4 d-flex flex-column">
+                            <h3 class="mb-3">
+                                <i class="bi bi-caret-right-fill"></i>
+                                Missão
+                            </h3>
+                            <p class="card-text mb-auto">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Voluptates esse alias provident enim nihil, optio suscipit
+                                magnam eius quae officia molestias, temporibus unde rem?
+                                Corporis aut nulla pariatur eaque magni?
+                                <br><br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Itaque aliquid voluptas at sit assumenda et nihil laborum
+                                dolorem dignissimos maxime deserunt soluta iusto, ipsum velit
+                                iure facilis amet adipisci error.
+                            </p>
+                        </div>
+                        <div class="col-md-5 d-none d-md-flex rounded">
+                            <img src="assets/sobreprojeto/missao.jpeg" alt="Rede Mente Ativa"
+                                class="img-fluid w-100 h-100 imagem-sobre">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column position-static text-end">
+                            <h3 class="mb-0">Valores <i class="bi bi-caret-left-fill"></i></h3>
+                            <p class="card-text mb-auto">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates esse alias
+                                provident enim nihil, optio suscipit magnam eius quae officia molestias, temporibus unde
+                                rem? Corporis aut nulla pariatur eaque magni?
+                                <br>
+                                <br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aliquid voluptas at sit
+                                assumenda et nihil laborum dolorem dignissimos maxime deserunt soluta iusto, ipsum velit
+                                iure facilis amet adipisci error.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column position-static text-start">
+                            <h3 class="mb-0">
+                                <i class="bi bi-caret-right-fill">
+                                </i> Visão
+                            </h3>
+                            <p class="card-text mb-auto">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates esse alias
+                                provident enim nihil, optio suscipit magnam eius quae officia molestias, temporibus unde
+                                rem? Corporis aut nulla pariatur eaque magni?
+                                <br>
+                                <br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aliquid voluptas at sit
+                                assumenda et nihil laborum dolorem dignissimos maxime deserunt soluta iusto, ipsum velit
+                                iure facilis amet adipisci error.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+        </article>
         <!--CARROSSEL-->
-        <div id="carouselRedeMenteAtiva" class="carousel slide" data-bs-ride="carousel" data-bs-interval="555000">
+        <article id="carouselRedeMenteAtiva" class="carousel slide mb-4" data-bs-ride="carousel"
+            data-bs-interval="5000">
             <!-- Indicadores -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselRedeMenteAtiva" data-bs-slide-to="0" class="active"
@@ -64,34 +144,25 @@
             <div class="carousel-inner">
                 <!-- Imagem 1 -->
                 <div class="carousel-item active">
-                    <div class="written-content-left">
+                    <div class="written-content">
                         <h1>Ambientes Climatizados e Organizados</h1>
-                        <p>
-                            Professores equipados com material de estudo e preparados para reforçar o estudo de seus
-                            filhos
-                        </p>
                     </div>
                     <img src="assets/carrossel/img1.png" class="d-block w-100 carousel-img" alt="Imagem do carrossel 1">
                 </div>
                 <!-- Imagem 2 -->
                 <div class="carousel-item">
-                    <div class="written-content-right">
-                        <h1>Diversas Modalidades</h1>
+                    <div class="written-content-with-description">
+                        <h1>Modalidades Esportivas</h1>
                         <p>
-                            Do Futebol ao Ballet, oferecemos diversas modalidades esportivas para manter o corpo do seu
-                            filho ativo e aulas de particulares para deixa-lo(a) com a mente ativa.
+                            Judô, Jiu-Jitsu, Ballet, Futebol e Recreações.
                         </p>
                     </div>
                     <img src="assets/carrossel/img2.png" class="d-block w-100 carousel-img" alt="Imagem do carrossel 2">
                 </div>
                 <!-- Imagem 3 -->
                 <div class="carousel-item">
-                    <div class="written-content-left">
-                        <h1>Professores Qualificados</h1>
-                        <p>
-                            Professores de Esporte qualificados em sua área de atuação para oferecer a melhor
-                            experiência no mercado e que caiba no seu bolso.
-                        </p>
+                    <div class="written-content">
+                        <h1>Professores Qualificados e Capacitados</h1>
                     </div>
                     <img src="assets/carrossel/img3.png" class="d-block w-100 carousel-img" alt="Imagem do carrossel 3">
                 </div>
@@ -112,98 +183,171 @@
                     Próximo
                 </span>
             </button>
-        </div>
+        </article>
 
-        <!--SOBRE-->
-        <div id="sobre">
-            <h1 class="titulo-novo-topico">Nosso Projeto</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <h3 class="mb-0">Qual a Nossa Proposta?</h3>
-                            <p class="card-text mb-auto">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates esse alias provident enim nihil, optio suscipit magnam eius quae officia molestias, temporibus unde rem? Corporis aut nulla pariatur eaque magni?
-                                <br>
-                                <br>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aliquid voluptas at sit assumenda et nihil laborum dolorem dignissimos maxime deserunt soluta iusto, ipsum velit iure facilis amet adipisci error.
-                            </p> 
+        <article id="sobre" class="container">
+            <div class="col-12 mb-4">
+                <h2 class="pb-2 text-center">Sobre a Rede Mente Ativa</h2>
+                <div class="row g-0 border rounded overflow-hidden shadow-sm text-end">
+                    <div class="col-md-7 p-4 d-flex flex-column">
+                        <h3 class="mb-3">
+                            O que Oferecemos
+                            <i class="bi bi-caret-left-fill"></i>
+                        </h3>
+                        <p class="card-text mb-auto">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Voluptates esse alias provident enim nihil, optio suscipit
+                            magnam eius quae officia molestias, temporibus unde rem?
+                            Corporis aut nulla pariatur eaque magni?
+                            <br><br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Itaque aliquid voluptas at sit assumenda et nihil laborum
+                            dolorem dignissimos maxime deserunt soluta iusto, ipsum velit
+                            iure facilis amet adipisci error.
+                        </p>
+                    </div>
+                    <div class="col-md-5 d-none d-md-flex rounded">
+                        <img src="assets/sobreprojeto/missao.jpeg" alt="Rede Mente Ativa"
+                            class="img-fluid w-100 h-100 imagem-sobre">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-4">
+                <div class="row g-0 border rounded overflow-hidden shadow-sm">
+
+                    <div class="col-12 p-4 d-flex flex-column">
+
+                        <h3 class="mb-3">
+                            <i class="bi bi-caret-right-fill"></i>
+                            Parcerias
+                        </h3>
+
+                        <p class="card-text mb-4">
+                            Conheça melhor nossos parceiros que tornam este projeto possivel...
+                        </p>
+                        <!-- Parceiro 1 -->
+                        <div class="parceiro d-flex align-items-center gap-3 mb-3">
+                            <div class="logo-parceiro">
+                                <img src="assets/parcerias/cas.png" alt="Colégio Albert Sabin" class="img-fluid">
+                            </div>
+                            <h4 class="mb-0 flex-grow-1">
+                                Colégio Albert Sabin
+                            </h4>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                class="instagram-link" aria-label="Instagram do Colégio Albert Sabin">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <!-- Parceiro 2 -->
+                        <div class="parceiro d-flex align-items-center gap-3 mb-3">
+                            <div class="logo-parceiro">
+                                <img src="assets/parcerias/cas.png" alt="Colégio Albert Sabin" class="img-fluid">
+                            </div>
+                            <h4 class="mb-0 flex-grow-1">
+                                Colégio Albert Sabin
+                            </h4>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                class="instagram-link" aria-label="Instagram do Colégio Albert Sabin">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <!-- Parceiro 3 -->
+                        <div class="parceiro d-flex align-items-center gap-3">
+                            <div class="logo-parceiro">
+                                <img src="assets/parcerias/cas.png" alt="Colégio Albert Sabin" class="img-fluid">
+                            </div>
+                            <h4 class="mb-0 flex-grow-1">
+                                Colégio Albert Sabin
+                            </h4>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                class="instagram-link" aria-label="Instagram do Colégio Albert Sabin">
+                                <i class="bi bi-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </article>
 
-
-
-            <div class="row mb-2">
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static">
-                            <h3 class="mb-0">Qual a Nossa Proposta?</h3>
-                            <p class="card-text mb-auto">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates esse alias provident enim nihil, optio suscipit magnam eius quae officia molestias, temporibus unde rem? Corporis aut nulla pariatur eaque magni?
-                                <br>
-                                <br>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aliquid voluptas at sit assumenda et nihil laborum dolorem dignissimos maxime deserunt soluta iusto, ipsum velit iure facilis amet adipisci error.
-                            </p> 
+        <article id="modalidades">
+            <div class="container px-4 border-bottom">
+                <h2 class="pb-2 border-bottom text-center">Modalidades Esportivas</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="feature col">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                            <img src="assets/modalidades/judo.png" width="60px">
                         </div>
+                        <h4 class="fs-2">Judô</h4>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static"> <strong
-                                class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                            <h3 class="mb-0">Post title</h3>
-                            <div class="mb-1 text-body-secondary">Nov 11</div>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.</p> <a href="#"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi" aria-hidden="true">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg> </a>
+                    <div class="feature col">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                            <img src="assets/modalidades/ballet.png" width="60px">
                         </div>
-                        <div class="col-auto d-none d-lg-block"> <svg aria-label="Placeholder: Thumbnail"
-                                class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img"
-                                width="200" xmlns="http://www.w3.org/2000/svg">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg> </div>
+                        <h4 class="fs-2">Ballet</h4>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
+                    </div>
+                    <div class="feature col">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded">
+                            <img src="assets/modalidades/futebol.png" width="60px">
+                        </div>
+                        <h4 class="fs-2">Futebol</h4>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
+
+        <article id="contato" class="container">
+            <div class="px-4 my-5 text-center">
+                <img class=" mx-auto " src="assets/logoredementeativa.png" alt="Logo Rede Mente Ativa" width="150">
+                <h2 class="display-5 fw-bold">Entre Em Contato</h2>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">
+                        Para mais informações e matrículas clique no botão abaixo para ser redirecionado ao nosso
+                        WhatsApp.
+                    </p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btn btn-success btn-lg px-4 gap-3">
+                            <i class="bi bi-whatsapp"></i>
+                            WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
 
     </main>
 
-    <footer>
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 lh-1" aria-label="Bootstrap">
-                    <img class="bi" width="30" src="assets/logoredementeativa.png" alt="">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 lh-1" aria-label="Bootstrap">
+                <img class="bi" width="60" src="assets/logoredementeativa.png" alt="">
+            </a>
+            <span class="mb-3 mb-md-0">
+                © 2024 Rede Mente Ativa, Todos os direitos reservados.
+            </span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="nav-link" href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
                 </a>
-                <span class="mb-3 mb-md-0">
-                    © 2024 Rede Mente Ativa, Todos os direitos reservados.
-                </span>
-            </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <a class="nav-link" href="#" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a class="nav-link" href="#" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+            </li>
+            <li class="ms-3">
+                <a class="nav-link" href="#" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
+
 
 </body>
 
